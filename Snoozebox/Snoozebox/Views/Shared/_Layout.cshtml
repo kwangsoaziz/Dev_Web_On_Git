@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+<link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+<script src="~/Content/js/bootstrap.min.js"></script>
+<script src="~/Content/js/jquery-1.10.1.min.js"></script>
+ 
+    
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="" style="background-color:gray;clear:none;width:auto;height:150px; ">
+
+                        <div class="" style="width: 150px;  background-color:red; margin-left: 15%;margin-top:1%;float:left;clear:none;">
+
+
+                            <img src="~/Content/images/logo%20new.jpg" width="150" style="height: 120px" />
+
+                        </div>
+
+                    </div>
+
+                 </div>
+        </div>
+                <div class="row">
+                    <div class="col-md-12">
+                            <nav class="navbar navbar-default" style="">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#id_nav1">
+                                        <span class="icon-bar"> </span>
+                                        <span class="icon-bar"> </span>
+                                        <span class="icon-bar"> </span>
+                                    </button>
+                                    <a class="navbar-brand" href=""> Snooze box </a>
+
+                                </div>
+                                <div class="collapse navbar-collapse" id="id_nav1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href=""> Home</a></li>
+                                        <li class=""><a href=""> About us</a></li>
+                                        <li class=""><a href=""> Gallery</a></li>
+                                        <li class="dropdown">
+                                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dining <span class="caret"></span></a>
+                                          <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Japanese Food</a></li>
+                                            
+                                          </ul>
+                                        </li>
+                                        
+                                        
+                                        <li class=""><a href=""> Inbox coffee</a></li>
+                                        <li class=""><a href=""> Contact</a></li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right" style="margin-right:10%">
+
+                                        <li class="active"><a href="" data-toggle="modal" data-target=".bs-example-modal-lg"> Find Rooms </a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+
+
+
+                     </div> 
+
+                </div>
+    
+    </div>    
+   
+</head>    
+     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                   <h2> Find Rooms</h2>
+                </div>
+                            <div class="modal-dialog">
+                                            
+                                            <form id="find" >
+                                             <div class="row">   
+                                                <div class="col-md-6">
+                                                <div style="padding-left:5%">Check-In:  <input type="date" /> </div>
+                                                </div>
+                                               <div class="col-md-6">
+                                                 <div style="padding-left:5%;float:left;">Check-Out:  <input type="date" /> </div>
+                                               </div>
+                                            </div>
+                                                <div class="col-md-6">
+                                                <div style="padding-left:5%"> Adult  <input type="date" /> </div>
+                                                </div>
+                                               <div class="col-md-6">
+                                                 <div style="padding-left:5%;float:left;">Chile <input type="" /> </div>
+                                               </div>
+                                                
+                                            
+                                            
+                                            </form>
+                                            
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send message</button>
+              </div>
+            </div>
+    </div>
+
+
+
+
+
+</div>
+
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+    
+   
+
+
+    
+
+   
+
+</body>
+<footer>
+
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                            <nav class="navbar navbar-default" style="">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#id_nav1">
+                                        <span class="icon-bar"> </span>
+                                        <span class="icon-bar"> </span>
+                                        <span class="icon-bar"> </span>
+                                    </button>
+                                    <a class="navbar-brand" href=""> Snooze box </a>
+
+                                </div>
+                               
+
+                            </nav>
+
+
+
+                     </div> 
+
+                </div>
+    </div>
+
+</footer>
+
+
+</html>
